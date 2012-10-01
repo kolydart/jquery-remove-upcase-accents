@@ -37,7 +37,7 @@ jQuery.extend(jQuery.expr[":"], {
 
 jQuery.extend({
 	removeAcc: function( elem ) {
-		var text = elem.innerHTML;
+		var text = (elem.tagName.toLowerCase() == "input") ? elem.value : elem.innerHTML;
 
 		text = text.replace( /Ά/g, "Α" );
 		text = text.replace( /ά/g, "α" );
@@ -60,7 +60,7 @@ jQuery.extend({
 		text = text.replace( /Ώ/g, "Ω" );
 		text = text.replace( /ώ/g, "ω" );
 
-		elem.innerHTML = text;
+		(elem.tagName.toLowerCase() == "input") ? (elem.value = text) : (elem.innerHTML = text);
 	}
 });
 
