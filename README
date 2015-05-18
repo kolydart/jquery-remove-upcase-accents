@@ -25,6 +25,6 @@ to support other languages.
 
 Include the following markup inside the <head> HTML element:
 
-  <script type="text/javascript" src="https://raw.github.com/ebababi/jquery-remove-upcase-accents/master/jquery.remove-upcase-accents.js">
+  <script type="text/javascript" src="https://raw.githubusercontent.com/tdoumas/jquery-remove-upcase-accents/master/jquery.remove-upcase-accents.js">
 
 Copyright (c) 2012 Nikolaos Anastopoulos, released under the GPLv3 license
